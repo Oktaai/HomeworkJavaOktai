@@ -54,12 +54,12 @@ if(bob.age <12){
 // Если какая-то из них отрицательная, сделает из неё положительную и сложит их
 // x = -2 y = -3 результат 5
 // попробуйте изменить значения 'x, y'
-let x = 5;
-let y = 10;
+let x = -5;
+let y = -10;
 
 if(x<0&&y<0){
-    x*=-1;
-    y*=-1;
+    x=-x;
+    y=-y;
     
 }else if(y<0){
  y*=-1;
@@ -100,8 +100,8 @@ const newOwner = {
 
 const registry2 = JSON.parse(JSON.stringify(registry));
 
-registry2.owner.age = 50;
-registry2.owner.name = 'Jack Smith';
+registry2.owner.age = newOwner.age;
+registry2.owner.name = newOwner.name;
 
 console.log(registry);
 console.log(registry2);
