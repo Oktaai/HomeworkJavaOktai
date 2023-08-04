@@ -33,11 +33,11 @@ for (let value of people){
         
         if(circle2 === 0){
             firstname=value[key] 
-            circle2=1
+            circle2++
              }
         else {
             surname=value[key]
-            circle2=0
+            circle2--
              }
 }
     console.log(`<li><h1>Hello ${firstname} ${surname}</h1></li>`);
