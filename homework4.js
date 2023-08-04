@@ -28,7 +28,7 @@ const people = [{name: 'Jack', surname: 'Smith'}, {name: 'Bob', surname: 'Summer
 let firstname,surname,circle1=0,circle2=0;
 
 for (let value of people){
-    circle1 === 0 ? console.log("<ul>") : console.log('\t');
+    if(circle1 === 0){console.log("<ul>")}
     for(let key in value){
         
         if(circle2 === 0){
@@ -40,7 +40,7 @@ for (let value of people){
             circle2--
              }
 }
-    console.log(`<li><h1>Hello ${firstname} ${surname}</h1></li>`);
+    console.log(`\t<li><h1>Hello ${firstname} ${surname}</h1></li>`);
     if(circle1 === people.length-1) {console.log("</ul>")} 
     circle1++
 }
